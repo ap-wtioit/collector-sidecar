@@ -1,6 +1,8 @@
 module github.com/Graylog2/collector-sidecar
 
-go 1.19
+go 1.22.9
+
+toolchain go1.22.11
 
 require (
 	github.com/docker/go-units v0.5.0
@@ -13,7 +15,7 @@ require (
 	github.com/pborman/uuid v1.2.1
 	github.com/rifflock/lfshook v0.0.0-20180920164130-b9218ef580f5
 	github.com/sirupsen/logrus v1.9.3
-	golang.org/x/sys v0.13.0
+	golang.org/x/sys v0.26.0
 )
 
 require (
@@ -26,3 +28,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0 // indirect
 )
+
+replace github.com/elastic/gosigar => github.com/ap-wtioit/gosigar v0.0.0-20250127095921-c61c0b12dc97
